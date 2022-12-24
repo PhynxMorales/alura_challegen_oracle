@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon">
+  <title>Encriptador / Desencriptador | Oracle</title>
+</head>
+
+<body>
+  <main>
+    <section class="container">
+      <div class="container__encriptador">
+        <div class="nav__encriptador">
+          <img class="nav__logo" src="./assets/Logo_Alura.svg" alt="Logo Alura">
+        </div>
+        <div class="main__encriptador">
+          <div class="main__content">
+            <div class="content__body">
+              <textarea name="traductor" id="traductor" cols="30" rows="10"
+                placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="content__footer">
+              <div class="content__alert">
+                <span class="alert__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 16 16">
+                    <path fill="#495057"
+                      d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2z" />
+                  </svg>
+                </span>
+                <p class="alert__paragraph">Solo letras minúsculas y sin acentos</p>
+              </div>
+              <div class="content__controls">
+                <button class="btn__dark" id="encriptar">Encriptar</button>
+                <button class="btn__light" id="desencriptar">Desencriptar</button>
+              </div>
+            </div>
+          </div>
+          <div class="main__resultado">
+            <div class="card__resultado">
+              <div class="card__resultado__image">
+                <img src="./assets/Muñeco.svg" alt="Muñeco de Alura">
+              </div>
+              <div class="card__resultado__paragraph">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+              </div>
+            </div>
+            <div class="card__area__resultado">
+              <textarea name="resultado" id="resultado" cols="30" rows="10"></textarea>
+              <div class="card__button__copy">
+                <button class="btn__light" id="copiar">Copiar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Create By <a href="">PhynxMorales</a></p>
+    </footer>
+  </main>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
